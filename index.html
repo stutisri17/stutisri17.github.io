@@ -1,18 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Stuti Srivastava</title>
-     <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<meta name="description" content="Portfolio of Your Name — projects and case studies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Hi, I'm Stuti.</h1>
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="/" class="nav-name">Your Name</a>
 
-    <p>
-        I'm a Product Manager focused on technology,
-        AI and media.
-    </p>
+    <div class="nav-links" id="navLinks">
+      <a href="#case-studies">Case Studies</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
 
+    <div class="nav-icons">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zM13.32 8.48H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5.01 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.95.68 1.92v2.85c0 .28.18.61.69.5A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
+      </a>
+      <a href="assets/resume.pdf" download class="btn-resume">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Resume
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ EXPERIENCE (photo left) ============ -->
+<section class="experience">
+  <div class="wrap">
+    <div class="experience-photo reveal">Your photo</div>
+    <div class="experience-text reveal">
+      <h1>Hi, I'm Your Name — a [your title] focused on [your focus area].</h1>
+      <p class="role">One or two sentences on what you do and the kind of problems you like to work on. This sits right under the headline so it reads like a quick intro.</p>
+
+      <div class="timeline">
+        <div class="timeline-row">
+          <span class="company">Company One</span>
+          <span class="role-meta">Senior Role Title</span>
+          <span class="dates">2023 — Present</span>
+        </div>
+        <div class="timeline-row">
+          <span class="company">Company Two</span>
+          <span class="role-meta">Role Title</span>
+          <span class="dates">2021 — 2023</span>
+        </div>
+        <div class="timeline-row">
+          <span class="company">Company Three</span>
+          <span class="role-meta">Junior Role Title</span>
+          <span class="dates">2019 — 2021</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT (photo right) ============ -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>About me</h2>
+      <p class="body-text">Write a couple of paragraphs about your background here — where you studied, how you got into your field, and what's shaped your approach. This is the section people read when they want the fuller story, not just the highlight reel.</p>
+      <p class="body-text">Second paragraph: what you're doing now, what you're curious about, and what kind of work excites you. End with something personal — a hobby, a side interest, anything that makes the page sound like a person.</p>
+    </div>
+    <div class="about-photo reveal">Your photo</div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Projects</h2>
+      <p class="section-sub">Independent work outside of my day job.</p>
+    </div>
+
+    <div class="project-feature reveal">
+      <div class="project-feature-media">Project image</div>
+      <div class="project-feature-body">
+        <p class="eyebrow">Featured project</p>
+        <h3>InsightAI</h3>
+        <p>One or two sentences describing what InsightAI does and the problem it solves. Keep it short — the detail page carries the rest.</p>
+        <a href="insightai/" class="btn-primary">
+          View project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section class="case-studies" id="case-studies">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Case studies</h2>
+      <p class="section-sub">A closer look at a few problems I've worked through end to end.</p>
+    </div>
+
+    <div class="case-grid">
+      <a href="case-study-1/" class="case-card reveal">
+        <div class="case-card-media">Cover image</div>
+        <div class="case-card-body">
+          <h3>Case Study One</h3>
+          <p>Short one-line description of the problem and what you shipped.</p>
+          <span class="case-card-link">View case study →</span>
+        </div>
+      </a>
+
+      <a href="case-study-2/" class="case-card reveal">
+        <div class="case-card-media">Cover image</div>
+        <div class="case-card-body">
+          <h3>Case Study Two</h3>
+          <p>Short one-line description of the problem and what you shipped.</p>
+          <span class="case-card-link">View case study →</span>
+        </div>
+      </a>
+
+      <a href="case-study-3/" class="case-card reveal">
+        <div class="case-card-media">Cover image</div>
+        <div class="case-card-body">
+          <h3>Case Study Three</h3>
+          <p>Short one-line description of the problem and what you shipped.</p>
+          <span class="case-card-link">View case study →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ END / CTA SECTION ============ -->
+<section class="end-section reveal" id="contact">
+  <div class="wrap">
+    <h2>Interested in working together?</h2>
+    <p>I'm always open to hearing about new projects and opportunities. Reach out and I'll get back to you as soon as I can.</p>
+    <a href="mailto:you@example.com" class="btn-primary">
+      Get in touch
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-name">Your Name</span>
+        <p>[Your title] building things at the intersection of [x] and [y].</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Case Studies</h4>
+        <ul>
+          <li><a href="case-study-1/">Case Study One</a></li>
+          <li><a href="case-study-2/">Case Study Two</a></li>
+          <li><a href="case-study-3/">Case Study Three</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="insightai/">InsightAI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:you@example.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Your Name. All rights reserved.</span>
+      <div class="nav-icons">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zM13.32 8.48H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.5v-1.75c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5.01 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.95.68 1.92v2.85c0 .28.18.61.69.5A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
