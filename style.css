@@ -79,7 +79,7 @@ p { margin: 0; }
 
 .nav-name {
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -87,6 +87,8 @@ p { margin: 0; }
   display: flex;
   align-items: center;
   gap: 34px;
+  margin-left: auto;
+  margin-right: 32px;
 }
 
 .nav-links a {
@@ -101,38 +103,16 @@ p { margin: 0; }
   display: flex;
   align-items: center;
   gap: 18px;
-  margin-left: 8px;
 }
 
-.nav-icons a {
+.nav-icons a:not(.btn-resume) {
   display: flex;
   color: var(--ink);
   opacity: 0.75;
   transition: opacity 0.15s ease;
 }
 
-.nav-icons a:hover { opacity: 1; }
-
-.btn-resume {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--ink);
-  color: #FFFFFF;
-  border: 1px solid var(--ink);
-  padding: 10px 18px;
-  border-radius: 100px;
-  font-size: 14px;
-  font-weight: 500;
-  white-space: nowrap;
-  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
-}
-
-.btn-resume:hover {
-  background: #FFFFFF;
-  color: #000000;
-  transform: translateY(-1px);
-}
+.nav-icons a:not(.btn-resume):hover { opacity: 1; }
 
 .nav-toggle {
   display: none;
@@ -154,7 +134,11 @@ p { margin: 0; }
    HERO / EXPERIENCE  (photo left, text right)
    ============================================ */
 .experience {
+  min-height: calc(100vh - 76px);
+  min-height: calc(100svh - 76px);
   padding: 96px 0 80px;
+  display: flex;
+  align-items: center;
 }
 
 .experience .wrap {
@@ -623,8 +607,8 @@ footer {
   .about .wrap {
     grid-template-columns: 1fr;
   }
-  .experience-photo { max-width: 260px; }
-  .about-photo { max-width: 260px; order: -1; }
+  .experience-photo { width: 100%; max-width: 260px; justify-self: center; }
+  .about-photo { width: 100%; max-width: 260px; justify-self: center; order: -1; }
 
   .project-feature { grid-template-columns: 1fr; }
 
